@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <script language="javascript">
+        function love_score(){
+   
+            var n=Math.random()*100;
+           
+            if(n>=90){
+                alert("Your Score is "+parseInt(n)+"%  Congratulations You Both Love Eachother too Moon..!!!!")
+            }
+            else if(n>=60 && n<90){
+                alert("Your Love Score is "+parseInt(n)+"%  Your Partner Loves You..!!!")
+            }
+            else{
+                alert("Your Love Score is "+parseInt(n)+"%    Please Change your Partner....!!!!!")
+            }
+          
+          
+        
+        }
+        
+    </script>
+    <style>
+        .container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: rgb(247, 196, 214);
+            padding: 30px;
+            margin-left: 450px;
+            margin-right: 450px;
+            border-radius: 10px;
+           
+          
+              
+          
+            
+        }
+        .name{
+            text-align: center;
+            font-size: xx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: red;
+            font-kerning: inherit;
+            
+        }
+        .form{
+            font-size: larger;
+            font-weight: 500;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .text_box{
+            height: 40px;
+            width: 290px;
+            border: red solid;
+        
+        }
+        .btn{
+            background-color: red;
+            color: aliceblue;
+            border: red solid;
+            height: 60px;
+            width: 300px;
+            border-radius: 7px;
+            font-size: larger;
+        }
+        body{
+            background-color: rgb(255, 238, 240);
+        }
+        
+
+    @media (max-width:300px) {
+                  .btn{
+                          background-color: antiquewhite;
+                  }
+    }
+    </style>
+</head>
+<body>
+    <div class="name">
+        <h1>Love Calculator</h1>
+    </div>
+    <div class="container">
+     
+        <div class="form">
+              <form name="form1">
+                First Person Name:<br>
+                 <input type="text" name="1st_person" class="text_box" placeholder="Romeo"><br><br>
+                 Second Person Name:<br>
+                 <input type="text" name="2nd_person" class="text_box" placeholder="Juliet"><br><br>
+               </form>
+               <br>
+                 <input type="button" name="btn" value="Calculate" class="btn" onclick="love_score()"> 
+        </div>
+
+    </div>
+</body>
+</html>
