@@ -1,0 +1,67 @@
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(185, 8, 8);
+   
+    padding: 30px;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 10px;
+   
+  
+      
+  
+    
+}
+.name{
+    text-align: center;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 249, 249);
+    font-kerning: inherit;
+    text-decoration: solid;
+   
+    
+}
+.form{
+    font-size: larger;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text_box{
+    height: 40px;
+    width: 290px;
+    border: red solid;
+    
+
+}
+.btn{
+    background-color: red;
+    color: aliceblue;
+    border: rgb(249, 248, 248) solid;
+    height: 60px;
+    width: 300px;
+    border-radius: 7px;
+    font-size: larger;
+}
+body{
+    background-color: rgb(255, 238, 240);
+    background-image: url("love_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (max-width:360px) {
+         .name{
+            font-size: x-large;
+            text-align: center;
+            padding-left: 140px;
+         }
+         .container{
+            padding-right: 200px;
+            padding-left: 200px;
+            text-align: left; 
+         }
+}
